@@ -87,9 +87,9 @@ public class Pizza {
         }
         if(isExtraToppingsOrdered){
             if(isVeg)
-                bill += "Extra Toppings Added:70\n";
+                bill += "Extra Toppings Added: 70\n";
             else
-                bill += "Extra Toppings Added:120\n";
+                bill += "Extra Toppings Added: 120\n";
         }
         if(isTakeAwayOrder){
             bill += "Paperbag Added: 20\n";
