@@ -9,6 +9,7 @@ public class Pizza {
     private boolean isTakeAwayOrder;
     private boolean isToppingAdded = false;
     private boolean isCheeseAdded = false;
+    private boolean isTakeAwayAdded = false;
     private String bill;
 
     public void setExtraCheeseOrdered(boolean extraCheeseOrdered) {
@@ -69,8 +70,10 @@ public class Pizza {
 
     public void addTakeaway(){
         // your code goes here
-        price += 20;
+        if(!isTakeAwayAdded)
+            price += 20;
         isTakeAwayOrder = true;
+        isTakeAwayAdded = true;
     }
 
     public String getBill(){
